@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+  </script>
+  <style>
+         body {             
+            background-image: url("./img/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: 30% 70%;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            min-height: 100vh;          
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #c0202f;
+            font-style: italic;
+            text-align: center;                        
+        }
+
+        h4 {
+          margin-top: 7px;
+          font-size: 24px;
+          color: #c0202f;
+          text-align: center;
+          padding: 0 15px;
+        }
+
+        #mes {
+          width: 320px;
+          max-width: 90%;
+          padding: 10px 0;
+          font-size: 1.25rem;
+        }
+
+        #responda {
+          text-align: center;
+          padding: 0 20px;
+          word-break: break-word;
+        }
+
+        @media (max-width: 640px) {
+            .flex.flex-col {
+                height: auto !important;
+                min-height: 100vh;
+                justify-content: center !important;
+                align-items: center !important;
+                padding: 30px 15px;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            h4 {
+                font-size: 20px;
+                margin-top: 8px;
+            }
+
+            #mes {
+                width: 85% !important;
+                margin-top: 25px !important;
+                font-size: 16px;
+            }
+
+            #responda {
+                font-size: 26px !important;
+                margin-top: 20px !important;
+            }
+        }
+  </style>
+  <title>JS - 7.1</title>
+</head>
+  
+<body>
+      
+      <div class="flex flex-col justify-center items-center h-screen">      
+        <h1>Mes de número a letra</h1>    
+        <input id="mes" type="number" class="flex w-1/4 mt-7 border-2 border-amber-800 rounded-lg text-center" placeholder="escribe un numero entre 1 y 12">
+        <p id="responda" class="mt-5 text-3xl"></p>
+      </div>
+        
+  
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
